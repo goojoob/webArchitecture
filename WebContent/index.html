@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-es">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		
+		<title>WEB</title>
+		
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/abonats.js"></script>
+		
+
+	</head>
+
+
+	<body >
+
+
+		<div class="panel-group" id="#accordionNO">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+					  <a data-toggle="collapse" data-parent="#accordion" href="#collapse0" id="tituloAbonat">Cercar Abonat</a>
+					</h4>
+				</div>
+				<div id="collapse0" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<input size="20" type="text" maxlength="12" id="abonat" name="abonat"  placeholder="codi abonat">
+					</div>
+				</div>
+			</div>			
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div class="columns2"> 
+						<div>
+							<h4 class="panel-title">
+							  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="rightAlign">Dades de l'Abonat</a>
+							</h4>
+						</div>
+						<div>
+							<h4 class="panel-title">
+							  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="rightAlign">Dades Fiscals</a>
+							</h4>
+						</div>
+					</div>				
+
+				</div>
+				<!-- DATOS ABONADOS -->
+				<div id="collapse1" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<table>
+							<tr>
+								<td style="width:600px">
+									<table id="newspaper-a" style="width:550px !important;">
+											<thead>
+												<tr>
+													<th scope="col" style="width:80px">Data Alta</th>
+													<th scope="col" style="width:80px">DNI/CIF</th>
+													<th scope="col" >Nom</th>
+													<th scope="col" style="width:50px">Finca</th>
+													<th scope="col" style="width:50px">Estat</th>										
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><label class="data bold" id="abonadoFechaAlta"></label></td>
+													<td><label class="data bold" id="abonadoDNI"></label></td>
+													<td><label class="data bold" id="abonadoNombre"></label></td>
+													<td><label class="data bold" id="abonadoFinca"></label></td>
+													<td><label class="data bold" id="abonadoEstado"></label></td>		
+												</tr>
+											</tbody>
+									</table>
+									<table id="newspaper-a" style="width:550px !important;">
+											<thead>
+												<tr>
+													<th scope="col" style="width:150px">Tipus Sub</th>
+													<th scope="col" style="width:100px">Tfno</th>
+													<th scope="col" >Adreça subministrament</th>
+													<th scope="col" style="width:50px">AUPAC</th>													
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><label class="data bold" id="abonadoTipSub"/></label></td>
+													<td><label class="data bold" id="abonadoTelefono"/></label></td>
+													<td><label class="data bold" id="abonadoDireccion"/></label></td>
+													<td><label class="data bold" id="abonadoAUPAC"/></label></td>	
+												</tr>
+											</tbody>
+									</table>										
+								</td>
+								<td style="width:50%">
+									<table id="newspaper-a">
+											<thead>
+												<tr>
+													<th scope="col" style="width:350px">Adreça Fiscal</th>
+													<th scope="col">CP</th>										
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><label class="data bold" id="abonadoDireccionFiscal"/></label></td>
+													<td><label class="data bold" id="abonadoCP"/></label></td>	
+												</tr>
+											</tbody>
+									</table>
+									<table id="newspaper-a">
+											<thead>
+												<tr>
+													<th scope="col" style="width:250px">Municipi</th>
+													<th scope="col" style="width:250px">Provincia</th>							
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><label class="data bold" id="abonadoMunicipio"/></label></td>
+													<td><label class="data bold" id="abonadoProvincia"/></label></td>
+												</tr>
+											</tbody>
+									</table>										
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</body>
+</html>
